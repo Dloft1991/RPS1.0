@@ -4,17 +4,18 @@ body {
 
 p {
     color: rgb(237, 237, 237);
-    font-size: 5px;
+    font-size: 10px;
 }
 
 main {
-    background-color: rgb(0, 0, 0);
-    margin-left: 10%;
-    margin-right: 25%;
-    text-align: center;
+    background-color: black;
     border-radius: 5px;
-    height: 100px;
-    width: 300px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 h1 {
@@ -22,4 +23,33 @@ h1 {
     font-family: 'Press Start 2P', cursive;
     text-align: center;
 
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+.picks {
+    background-color: black;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.rock {
+    margin-left: 25px;
+}
+.paper {
+    margin-right: 105px;
+    float: right;   
+}
+.scissors {
+    margin-left: 25px;
+    margin-right: 25px;
+    float: right;   
 }
