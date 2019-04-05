@@ -53,3 +53,11 @@ img {
     margin-right: 25px;
     float: right;   
 }
+
+input {
+    margin-left: 270px;
+}
+
+#cantDoThat {
+    text-align: center;
+}
