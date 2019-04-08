@@ -60,31 +60,31 @@ function opponentGuess () {
     clearInterval();
 }
 
-userPick = rock || paper || scissors; 
+
 
 function checkMatch () {
    
-    if (userPick === rock || userPick === scissors || userPick === paper) {
+    if (picks.rock.value === "rock" || picks.rock.value === "scissors" || picks.rock.value === "paper") {
 
-        if (userPick === rock && computerSelect === "scissors"){
+        if (picks.rock.value === "rock" && computerSelect === "scissors"){
             winner++;
         }
-        if (userPick === rock && computerSelect === "paper") {
+        if (picks.rock.value === "rock" && computerSelect === "paper") {
             loser++;
         }
-        if (userPick === scissors && computerSelect === "paper") {
+        if (picks.rock.value === "scissors" && computerSelect === "paper") {
             winner++;
         }
-        if (userPick === scissors && computerSelect === "rock") {
+        if (picks.rock.value === "scissors" && computerSelect === "rock") {
             loser++;
         }
-        if (userPick === paper && computerSelect === "rock") {
+        if (picks.rock.value === "paper" && computerSelect === "rock") {
             winner++;
         }
-        if (userPick === paper && computerSelect === "scissors") {
+        if (picks.rock.value === "paper" && computerSelect === "scissors") {
             loser++;
         }
-        if (userPick === computerSelect) {
+        if (picks.rock.value === computerSelect) {
             tie++;
         }
 
@@ -92,6 +92,6 @@ function checkMatch () {
     $("#losses").text(loser);
     $("#ties").text(tie);
 
-    // chickenDinner();
+    
 };
 };

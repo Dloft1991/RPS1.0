@@ -31,14 +31,14 @@ img {
 }
 
 .picks {
-    background-color: black;
+    background-color: white;
     border-radius: 5px;
     margin-left: 5%;
     margin-right: 5%;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     padding-left: 5%;
-    padding-right: 5%;
+    padding-right: 1%;
 }
 
 .rock {
@@ -46,12 +46,10 @@ img {
 }
 .paper {
     margin-right: 105px;
-    float: right;   
 }
 .scissors {
     margin-left: 25px;
     margin-right: 25px;
-    float: right;   
 }
 
 input {

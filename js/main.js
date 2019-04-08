@@ -40,7 +40,7 @@ document.onkeyup = function(event) {
        
     }
     else {
-        incorrect();
+        document.getElementById("cantDoThat").innerHTML = (cantDoThat);
         console.log(cantDoThat);
     }
     console.log("UserGuess: " + userGuess);
@@ -51,7 +51,7 @@ document.onkeyup = function(event) {
     document.getElementById("losses").innerHTML = (losses);
     document.getElementById("ties").innerHTML = (ties);
 }
-const cantDoThat = "You must only use 'r', 'p', or 's'. "
+const cantDoThat = []
 function incorrect() {
     document.getElementById("cantDoThat").innerHTML = (cantDoThat);
 }
