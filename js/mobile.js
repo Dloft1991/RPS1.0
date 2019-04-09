@@ -30,26 +30,23 @@ $(".rock").on("click", function() {
     $("#userGuess").text(rock);
     console.log("userGuess: " + rock);
     opponentGuess();
-    checkMatch();
+    checkRock();
 });
 
 $(".paper").on("click", function() {
     $("#userGuess").text(paper);
     console.log("userGuess: " + paper);
     opponentGuess();
-    checkMatch();
+    checkPaper();
 });
 
 $(".scissors").on("click", function() {
     $("#userGuess").text(scissors);
     console.log("userGuess: " + scissors);
     opponentGuess();
-    checkMatch();
+    checkScissors();
   
 });
-
-
-
 function opponentGuess () {
 
     let computerPick = ["rock", "paper", "scissors"];
@@ -59,10 +56,41 @@ function opponentGuess () {
     console.log(computerSelect);
     clearInterval();
 }
+function checkPaper() {
+    if (picks.paper.value === "paper") {
+    if (picks.paper.value === "paper" && computerSelect === "rock") {
+        winner++;
+    }
+    if (picks.paper.value === "paper" && computerSelect === "scissors") {
+        loser++;
+    }
 
+    if (picks.paper.value === computerSelect) {
+        tie++;
+    }
+    $("#wins").text(winner);
+    $("#losses").text(loser);
+    $("#ties").text(tie);
+};
+};
+function checkScissors() {
+    if (picks.scissors.value === "scissors") {
+    if (picks.scissors.value === "scissors" && computerSelect === "paper") {
+        winner++;
+    }
+    if (picks.scissors.value === "scissors" && computerSelect === "rock") {
+        loser++;
+    }
 
-
-function checkMatch () {
+    if (picks.scissors.value === computerSelect) {
+        tie++;
+    }
+    $("#wins").text(winner);
+    $("#losses").text(loser);
+    $("#ties").text(tie);
+};
+};
+function checkRock () {
    
     if (picks.rock.value === "rock" || picks.rock.value === "scissors" || picks.rock.value === "paper") {
 
@@ -70,18 +98,6 @@ function checkMatch () {
             winner++;
         }
         if (picks.rock.value === "rock" && computerSelect === "paper") {
-            loser++;
-        }
-        if (picks.rock.value === "scissors" && computerSelect === "paper") {
-            winner++;
-        }
-        if (picks.rock.value === "scissors" && computerSelect === "rock") {
-            loser++;
-        }
-        if (picks.rock.value === "paper" && computerSelect === "rock") {
-            winner++;
-        }
-        if (picks.rock.value === "paper" && computerSelect === "scissors") {
             loser++;
         }
         if (picks.rock.value === computerSelect) {
