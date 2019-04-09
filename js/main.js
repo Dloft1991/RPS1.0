@@ -13,24 +13,24 @@ document.onkeyup = function(event) {
     let userGuess = event.key;
     var computerGuess = computerChoice[Math.floor(Math.random() * computerChoice.length)];
 
-    if (userGuess === "rock" || userGuess === "scissors" || userGuess === "paper") {
+    if (userGuess === "r" || userGuess === "s" || userGuess === "p") {
 
-        if (userGuess === "rock" && computerGuess === "scissors"){
+        if (userGuess === "r" && computerGuess === "scissors"){
             wins++;
         }
-        if (userGuess === "rock" && computerGuess === "paper") {
+        if (userGuess === "r" && computerGuess === "paper") {
             losses++;
         }
-        if (userGuess === "scissors" && computerGuess === "paper") {
+        if (userGuess === "s" && computerGuess === "paper") {
             wins++;
         }
-        if (userGuess === "scissors" && computerGuess === "rock") {
+        if (userGuess === "s" && computerGuess === "rock") {
             losses++;
         }
-        if (userGuess === "paper" && computerGuess === "rock") {
+        if (userGuess === "p" && computerGuess === "rock") {
             wins++;
         }
-        if (userGuess === "paper" && computerGuess === "scissors") {
+        if (userGuess === "p" && computerGuess === "scissors") {
             losses++;
         }
         if (userGuess === computerGuess) {
