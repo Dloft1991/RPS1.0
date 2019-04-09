@@ -31,6 +31,7 @@ $(".rock").on("click", function() {
     console.log("userGuess: " + rock);
     opponentGuess();
     checkRock();
+    chickenDinner()
 });
 
 $(".paper").on("click", function() {
@@ -38,6 +39,7 @@ $(".paper").on("click", function() {
     console.log("userGuess: " + paper);
     opponentGuess();
     checkPaper();
+    chickenDinner()
 });
 
 $(".scissors").on("click", function() {
@@ -45,6 +47,7 @@ $(".scissors").on("click", function() {
     console.log("userGuess: " + scissors);
     opponentGuess();
     checkScissors();
+    chickenDinner()
   
 });
 function opponentGuess () {
@@ -111,3 +114,25 @@ function checkRock () {
     
 };
 };
+
+function chickenDinner() {
+    if (winner === 10) {
+        alert("You beat your opponent");
+        reset();
+    } if (loser === 10) {
+        alert("Your opponent has beaten you");
+        reset();
+    }
+}
+
+function reset() {
+    winner = 0;
+    loser = 0;
+    tie = 0;
+    $("#wins").text("0");
+    $("#losses").text("0");
+    $("#ties").text("0");
+    $("#userGuess").text(" ");
+    $("#computerGuess").text(" ");
+
+}
