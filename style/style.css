@@ -45,7 +45,7 @@ img {
     margin-right: 5%;
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 5%;
+    padding-left: 17%;
     padding-right: 1%;
 }
 
@@ -66,4 +66,12 @@ input {
 
 #cantDoThat {
     text-align: center;
+}
+
+footer {
+   background-color: black;
+   height: 50px;
+   padding-top: 10px;
+   text-align: center;
+   color: white;
 }

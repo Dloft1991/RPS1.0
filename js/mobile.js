@@ -121,6 +121,7 @@ function chickenDinner() {
         reset();
     } if (loser === 10) {
         alert("Your opponent has beaten you");
+        $("#faces").
         reset();
     }
 }
