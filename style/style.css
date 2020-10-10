@@ -1,5 +1,8 @@
 body {
-    background-color: rgb(75, 210, 220);
+    background-image: url('../style/images/wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 p {
@@ -24,7 +27,7 @@ h1 {
     font-size: 30px;
     font-family: 'Press Start 2P', cursive;
     text-align: center;
-
+    color: white;
 }
 
 h3 {
