@@ -7,12 +7,11 @@ let ties = 0;
 
 
 
-
 document.onkeyup = function(event) {
-    
+   
     let userGuess = event.key;
     var computerGuess = computerChoice[Math.floor(Math.random() * computerChoice.length)];
-
+    
     if (userGuess === "r" || userGuess === "s" || userGuess === "p") {
 
         if (userGuess === "r" && computerGuess === "scissors"){
@@ -36,7 +35,6 @@ document.onkeyup = function(event) {
         if (userGuess === computerGuess) {
             ties++;
         }
-       
        
     }
     else {

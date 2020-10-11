@@ -16,7 +16,7 @@ main {
     border-radius: 5px;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 10%;
+    margin-top: 5%;
     padding-top: 20px;
     padding-bottom: 10px;
     padding-left: 5%;
@@ -29,6 +29,7 @@ h1 {
     font-family: 'Press Start 2P', cursive;
     text-align: center;
     color: white;
+    margin-top: 2%;
 }
 
 h3 {
@@ -42,8 +43,13 @@ img {
     width: 50px;
 }
 
+img:hover {
+    height: 100px;
+    width: 100px;
+    margin-left: -10px;
+}
 .picks {
-    background-color: white;
+    background-color: none;
     border-radius: 5px;
     margin-left: 5%;
     margin-right: 5%;
@@ -63,6 +69,26 @@ img {
     margin-left: 25px;
     margin-right: 25px;
 }
+
+@media only screen and (max-width: 414px) {
+    .picks {
+    background-color: white;
+    border-radius: 25px;
+   
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.rock {
+   align-content: center;
+}
+.paper {
+    align-content: center;
+}
+.scissors {
+    align-content: center;
+}
+  }
 
 input {
     margin-left: 270px;
